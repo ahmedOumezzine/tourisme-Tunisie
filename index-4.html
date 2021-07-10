@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/grid.css" type="text/css" media="all">
+  <!--[if gt IE 7]><!--><link rel="stylesheet" href="css/style.css"/><!--<![endif]-->
+	<!--[if lt IE 8]><link rel=stylesheet href="css/ie.css"><![endif]-->
+  <!--[if lt IE 9]>
+  	<script type="text/javascript" src="js/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div class="header-wrap">
+  	<header>
+    	<div class="container_24">
+        <div class="slogan"><img src="images/slogan.png" alt=""></div>
+        <nav>
+        	<ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index-1.html">Les Places</a></li>
+            <li><a href="index-5.html">Galleries</a></li>
+            <li><a href="index-4.html" class="current">Contact</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <section id="content">
+    <div class="container_24">
+    	<div class="wrapper">
+    	  <aside class="grid_7">
+        	<div class="indent">
+            <div class="box">
+            	<ul class="menu">
+                <li><a href="index.html" class="current">Accueil</a></li>
+                <li></li>
+                <li><a href="index-1.html">Les Places</a></li>
+                <li></li>
+                <li><a href="index-5.html">Galleries</a></li>
+                <li></li>
+                <li><a href="index-4.html">Contact</a></li>
+				  <li></li>
+			  </ul>
+            </div>
+                      </div>
+        </aside>
+    	  <div class="grid_17">
+        	<div class="inside">
+
+            <article>
+              <header class="alt">
+                <h2>Contact Form</h2>
+              </header>
+              <div class="content">
+                <script type="text/javascript" language="Javascript">
+<!--
+function verification()
+{
+ if(document.formulaire.nom.value == "")  {
+   alert("Veuillez entrer votre nom svp");
+   document.formulaire.nom.focus();
+   return false;
+  }
+   else
+ if(document.formulaire.prenom.value == "") {
+   alert("Veuillez entrer votre prenom svp");
+   document.formulaire.prenom.focus();
+   return false;
+  }
+   else
+ if(document.formulaire.email.value == "") {
+   alert("Veuillez entrer votre adresse electronique svp");
+   document.formulaire.email.focus();
+   return false;
+  }
+  else
+ if(document.formulaire.email.value.indexOf('@') == -1) {
+   alert("Ce n'est pas une adresse electronique, verifiez la svp");
+   document.formulaire.email.focus();
+   return false;
+  }
+  else
+    sujetoption = -1
+    for (i=0; i<formulaire.sujet.length; i++)
+    {
+    if(document.formulaire.sujet[i].checked){
+    sujetoption = i
+    }
+   }
+    if (sujetoption == -1) {
+   alert("Veuillez choisir le sujet de votre message svp");
+   return false;
+  }
+  else
+ if(document.formulaire.texte.value == "") {
+   alert("Veuillez entrer le texte de votre message svp");
+   document.formulaire.texte.focus();
+   return false;
+  }
+return true
+}
+//-->
+</script>
+
+<form name="formulaire"  method="post" onSubmit="return verification()">
+<h4><table cellspacing="0">
+<tbody><tr><td class="info">Votre nom : </td><td class="champ">
+<input name="nom" type="text" size="25" class="writein"></td></tr>
+<tr><td class="info">Votre prenom : </td><td class="champ">
+<input name="prenom" type="text" size="25" class="writein"></td></tr>
+<tr><td class="info">Votre email</td><td class="champ">
+<input name="email" type="text" size="25" class="writein"></td></tr>
+<tr><td class="subject">Le motif de votre message</td><td class="liste">
+<input name="sujet" type="radio" value="renseignement">Renseignement<br>
+<input name="sujet" type="radio" value="probleme technique"> Probleme technique<br>
+<input name="sujet" type="radio" value="partenariat">Partenariat</td></tr>
+<tr><td class="contenu">Votre message</td><td class="contenant"><textarea name="texte" cols="50" rows="10" class="writein"></textarea></td></tr>
+<tr id="nepasimprimer">
+  <td class="lesboutons"></td>
+  <td>
+<input name="soumettre" type="submit" value="Envoyer"><input name="annuler" type="reset" value="Annuler"></td></tr>
+</tbody></table>
+</h4>
+</form>
+              </div>
+            </article>
+          </div>
+        </div>
+    	</div>
+    </div>
+  </section>
+  <div class="footer-wrap">
+    <footer class="container_24">
+    Créé Par folan
+    </footer>
+  </div>
+</body>
+</html>
